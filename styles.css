@@ -21,7 +21,7 @@ body {
     animation: particlesAnimation 4s linear infinite;
 }
 
-.generate-container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,23 +29,29 @@ body {
     height: 100vh;
 }
 
+.input-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    color: red;
+}
+
+.generate-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .generate-screen {
     text-align: center;
     padding: 20px;
     background-color: #007bff; /* Dark blue background for generate screen */
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.view-history-screen {
-    /* Your view history screen styles */
-    text-align: center;
-    padding: 20px;
-    background-color: #000; /* Black background for view history screen */
     color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -67,6 +73,20 @@ body {
 .glowing-button:hover {
     background-color: #45a049; /* Darker color on hover */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.view-history button {
+    background-color: #000; /* Black background for view history button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-history button:hover {
+    background-color: #333; /* Darker color on hover */
 }
 
 @keyframes particlesAnimation {
