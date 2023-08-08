@@ -17,6 +17,6 @@ function verifyKey() {
 }
 
 function generateText() {
-    // Redirect to the provided URL
-    window.location.href = "https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo";
+    const generateLink = document.getElementById("generateLink");
+    generateLink.innerHTML = `<a href="https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo" target="_blank">Click here to generate</a>`;
 }
