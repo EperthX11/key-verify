@@ -10,7 +10,7 @@ function verifyKey() {
 }
 
 function generateText() {
-    const generatedText = "Generated text goes here.";
+    const generatedText = "Nothing yet";
     const historyDiv = document.getElementById("history");
     historyDiv.innerHTML += `<p>${generatedText}</p>`;
 }
