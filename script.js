@@ -10,10 +10,22 @@ function verifyKey() {
 }
 
 function generateText() {
-    const generatedText = "Generated text goes here.";
     const historyDiv = document.getElementById("history");
-    historyDiv.innerHTML += `<p>${generatedText}</p>`;
+
+    if (generateItems.length > 0) {
+        let newItem = generateItems.shift(); // Remove the first item from the array
+        generatedItems.push(newItem);
+
+        if (generateItems.length === 0) {
+            historyDiv.innerHTML = "<p>Out of stock</p>";
+        } else {
+            historyDiv.innerHTML = `<p>${newItem}</p>`;
+        }
+    } else {
+        historyDiv.innerHTML = "<p>Out of stock</p>";
+    }
 }
+
 
 function showHistory() {
     const historyDiv = document.getElementById("history");
