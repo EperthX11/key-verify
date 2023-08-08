@@ -21,18 +21,15 @@ function generateText() {
             historyDiv.innerHTML = `<p>${newItem}</p>`;
         }
 
-        // Generate and download text file
-        const textContent = "his";
-        const blob = new Blob([textContent], { type: "text/plain" });
-
-        const a = document.createElement("a");
-        a.href = URL.createObjectURL(blob);
-        a.download = "generated_text.txt";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        // Generate and display download link
+        const downloadLink = document.createElement("a");
+        downloadLink.href = "https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo"; // Replace with the actual path
+        downloadLink.download = "Account.txt";
+        downloadLink.textContent = "Download Generated Text";
+        historyDiv.appendChild(downloadLink);
     } else {
         historyDiv.innerHTML = "<p>Out of stock</p>";
     }
 }
+
 
