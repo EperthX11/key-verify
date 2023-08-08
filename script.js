@@ -1,3 +1,8 @@
+// Your existing JavaScript code
+
+let generateItems = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
+let generatedItems = [];
+
 // Your key verification code
 function verifyKey() {
     const enteredKey = document.getElementById("keyInput").value;
@@ -11,7 +16,12 @@ function verifyKey() {
     }
 }
 
-function generateLink() {
-    const generateLink = document.getElementById("generateLink");
-    generateLink.innerHTML = `<a href="https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo" target="_blank">Click here to generate</a>`;
+function generateText() {
+    // Redirect to the provided URL
+    window.location.href = "https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo";
+}
+
+function showHistory() {
+    const historyDiv = document.getElementById("history");
+    historyDiv.innerHTML = generatedItems.map(item => `<p>${item}</p>`).join("");
 }
