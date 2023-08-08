@@ -8,7 +8,6 @@ function verifyKey() {
         document.getElementById("errorMessage").textContent = "Incorrect key. Please try again.";
     }
 }
-
 function generateText() {
     const historyDiv = document.getElementById("history");
 
@@ -27,7 +26,7 @@ function generateText() {
         const a = document.createElement("a");
         a.style.display = "none";
         a.href = window.URL.createObjectURL(blob);
-        a.download = "Accounts.txt";
+        a.download = "generated_text.txt";
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(a.href);
@@ -35,11 +34,4 @@ function generateText() {
     } else {
         historyDiv.innerHTML = "<p>Out of stock</p>";
     }
-}
-
-
-
-function showHistory() {
-    const historyDiv = document.getElementById("history");
-    historyDiv.style.display = "block";
 }
