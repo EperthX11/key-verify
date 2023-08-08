@@ -13,6 +13,6 @@ function verifyKey() {
 
 // Generate the link and display it
 function generateLink() {
-    const generatedLink = "https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo";
+    const generatedLink = "https://mega.nz/file/uAMWhLgL#2pc0jRNRjKttzwmestEUCpAkD7R-SXKhgXD2t9AJiaQ";
     document.getElementById("generatedLink").innerHTML = `<a href="${generatedLink}" target="_blank">Download Link</a>`;
 }
