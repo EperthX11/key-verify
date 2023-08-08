@@ -22,16 +22,17 @@ function generateText() {
         }
 
         // Generate and download text file
-        const blob = new Blob(["his"], { type: "text/plain" });
+        const textContent = "his";
+        const blob = new Blob([textContent], { type: "text/plain" });
+
         const a = document.createElement("a");
-        a.style.display = "none";
-        a.href = window.URL.createObjectURL(blob);
+        a.href = URL.createObjectURL(blob);
         a.download = "generated_text.txt";
         document.body.appendChild(a);
         a.click();
-        window.URL.revokeObjectURL(a.href);
         document.body.removeChild(a);
     } else {
         historyDiv.innerHTML = "<p>Out of stock</p>";
     }
 }
+
