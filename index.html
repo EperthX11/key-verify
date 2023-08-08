@@ -18,9 +18,16 @@
             <p id="errorMessage" class="error-message"></p>
         </div>
         <div class="hidden" id="content">
-            <h2>Custom Section</h2>
-            <input type="text" id="customInput" placeholder="Enter text">
-            <button onclick="generateCustomText()">Generate</button>
+            <div class="generate-container">
+                <div class="generate-screen">
+                    <h2>Generate Screen</h2>
+                    <input type="text" id="customInput" placeholder="Enter text">
+                    <button onclick="generateCustomText()">Generate</button>
+                </div>
+                <div class="view-history">
+                    <button onclick="viewHistory()">View History</button>
+                </div>
+            </div>
         </div>
         <div id="history"></div>
     </div>
