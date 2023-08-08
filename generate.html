@@ -13,21 +13,11 @@
     <div class="container">
         <div class="generate-container">
             <div class="generate-screen">
-                <button class="glowing-button" onclick="generateText()">Generate</button>
-            </div>
-            <div class="view-history-screen" id="history">
+                <button class="glowing-button" onclick="generateLink()">Generate</button>
+                <p id="generatedLink" class="link-text"></p>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
-    <script>
-        // Perform key verification before allowing access to the generate page
-        const enteredKey = prompt("Please enter the key:"); // Use a prompt for simplicity, consider a more elegant approach
-        const correctKey = "500168-492367-110231";
-
-        if (enteredKey !== correctKey) {
-            window.location.href = "index.html"; // Redirect to index page if key is incorrect
-        }
-    </script>
 </body>
 </html>
