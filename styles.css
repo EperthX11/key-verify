@@ -21,6 +21,54 @@ body {
     animation: particlesAnimation 4s linear infinite;
 }
 
+.generate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.generate-screen {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff; /* Dark blue background for generate screen */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view-history-screen {
+    /* Your view history screen styles */
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Black background for view history screen */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glowing-button {
+    background-color: #4CAF50; /* Green color for the glowing button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.glowing-button:hover {
+    background-color: #45a049; /* Darker color on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
 .container {
     display: flex;
     justify-content: center;
