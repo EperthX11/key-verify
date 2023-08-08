@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="background">
-        <div class="particles"></div>
-    </div>
-    <div class="container">
-        <div class="generate-container">
-            <div class="generate-screen">
-                <button class="glowing-button" onclick="generateText()">Generate</button>
-            </div>
-            <div class="view-history-screen" id="history">
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+<!-- Same as before -->
+
+<script src="script.js"></script>
+<script>
+    // Perform key verification before allowing access to the generate page
+    const enteredKey = prompt("Please enter the key:"); // Use a prompt for simplicity, consider a more elegant approach
+    const correctKey = "500168-492367-110231";
+
+    if (enteredKey !== correctKey) {
+        window.location.href = "index.html"; // Redirect to index page if key is incorrect
+    }
+</script>
 </body>
 </html>
