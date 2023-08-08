@@ -8,6 +8,7 @@ function verifyKey() {
         document.getElementById("errorMessage").textContent = "Incorrect key. Please try again.";
     }
 }
+
 function generateText() {
     const historyDiv = document.getElementById("history");
 
