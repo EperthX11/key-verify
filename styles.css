@@ -42,18 +42,8 @@ body {
     color: red;
 }
 
-.view-history button {
-    background-color: #000; /* Black background for view history button */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.view-history button:hover {
-    background-color: #333; /* Darker color on hover */
+.view-history-button {
+    margin-top: 10px;
 }
 
 .generate-container {
@@ -88,14 +78,13 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes particlesAnimation {
-    0% {
-        background: transparent;
-    }
-    50% {
-        background: rgba(255, 255, 255, 0.2); /* Semi-transparent white particles */
-    }
-    100% {
-        background: transparent;
-    }
+.history {
+    display: none;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    color: white;
 }
