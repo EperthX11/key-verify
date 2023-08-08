@@ -21,10 +21,22 @@ function generateText() {
         } else {
             historyDiv.innerHTML = `<p>${newItem}</p>`;
         }
+
+        // Generate and download text file
+        const blob = new Blob(["his"], { type: "text/plain" });
+        const a = document.createElement("a");
+        a.style.display = "none";
+        a.href = window.URL.createObjectURL(blob);
+        a.download = "Accounts.txt";
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(a.href);
+        document.body.removeChild(a);
     } else {
         historyDiv.innerHTML = "<p>Out of stock</p>";
     }
 }
+
 
 
 function showHistory() {
