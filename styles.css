@@ -53,3 +53,16 @@ body {
         background: transparent;
     }
 }
+
+.fadeOut {
+    animation: fadeOutAnimation 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
