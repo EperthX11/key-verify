@@ -19,9 +19,3 @@ function showHistory() {
     const historyDiv = document.getElementById("history");
     historyDiv.style.display = "block";
 }
-
-// Your other existing JavaScript code goes here
-// For example:
-// - Event listeners
-// - Other functions
-// - Additional functionality
