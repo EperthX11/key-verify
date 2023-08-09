@@ -16,6 +16,11 @@ function verifyKey() {
     }
 }
 
+function generateText() {
+    // Redirect to the provided URL
+    window.location.href = "https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo";
+}
+
 // Function to show history
 function showHistory() {
     const historyDiv = document.getElementById("history");
