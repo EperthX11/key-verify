@@ -16,9 +16,23 @@ function verifyKey() {
     }
 }
 
-function generateText() {
-    // Redirect to the provided URL
-    window.location.href = "https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo";
+// Key verification and redirection for Verify and Generate button
+function verifyAndGenerate() {
+    const enteredKey = document.getElementById("keyInput").value;
+    const correctKey = "500168-492367-110231";
+
+    if (enteredKey === correctKey) {
+        // Generate a random item from the list
+        const randomIndex = Math.floor(Math.random() * generateItems.length);
+        const generatedItem = generateItems.splice(randomIndex, 1)[0];
+        generatedItems.push(generatedItem);
+
+        // Redirect to the provided URL
+        window.location.href = "https://mega.nz/file/LI0CXD5J#rX2kWbQB-oGxkaLOHQgDLvhYkati4oRWzRJqp-J_hoo";
+    } else {
+        // Redirect back to the index.html page
+        window.location.href = "index.html";
+    }
 }
 
 // Function to show history
